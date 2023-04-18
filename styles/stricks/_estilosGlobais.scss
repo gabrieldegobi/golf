@@ -1,0 +1,17 @@
+.container-main{
+    display: flex;
+}
+bold{
+    font-weight: 700;
+}
+
+@media screen and (max-width:1000px) {
+    .container-main{
+        flex-direction: column;
+    }
+
+    .container-rigth {
+            
+        width: 100%;}
+    
+}

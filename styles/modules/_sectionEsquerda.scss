@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.container-left {
+    width: 50%;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+
+
+    .container-list {
+        display: flex;
+        
+
+        a {
+            display: flex;
+            width: 30%;
+            text-decoration: none;
+            flex-direction: column;
+            padding: 1em;
+            border: 1px solid gray;
+            color: black;
+
+            &:nth-child(1) {
+                border-bottom: 5px #4e5d28 solid;
+
+            }
+
+            &:nth-child(4) {
+                display: none;
+            }
+
+
+            &:hover {
+                border-bottom: 5px #4e5d28 solid;
+
+            }
+
+            span {
+                text-align: end;
+            }
+
+        }
+    }
+
+    .container-main-esquerdo {
+        width: 90%;
+        margin: 1.5em;
+        box-sizing: border-box;
+
+
+
+        h2 {
+            text-transform: uppercase;
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 2px;
+            margin-bottom: 2em;
+            display: inline-block;
+
+
+        }
+
+        img {
+            display: block;
+            width: 80%;
+            border-radius: 25px;
+        }
+
+        h1 {
+            font-size: 86px;
+            margin: 1rem 0;
+        }
+
+        p {
+            font-size: 1.3em;
+            margin-top: 1em;
+        }
+
+        
+
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 2em;
+
+        .language {
+            display: flex;
+            flex-direction: row;
+
+            justify-content: space-between;
+
+            p {
+                text-transform: uppercase;
+                padding: 0 1em;
+            }
+
+
+        }
+
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: black;
+        }
+
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .container-left {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .container-left{
+    .container-list {
+        display: flex;
+
+        a {
+            width: 50%;
+            &:nth-child(2),
+            &:nth-child(3) {
+                display: none;
+
+            }
+
+            &:nth-child(4) {
+                display: flex;
+            }
+
+
+        }
+   
+
+    }
+    .container-main-esquerdo{
+        h1{
+            font-size: 64px;
+        }
+    }
+}}
